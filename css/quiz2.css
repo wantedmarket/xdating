@@ -1,0 +1,652 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1em !important;
+}
+
+.view {
+    display: none;
+}
+
+
+/*  --- header buttons ---*/
+
+#header .red_btn {
+    margin: 8px 7px 0;
+}
+
+a:hover {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+.red_btn {
+    border: 0;
+    background: 0 0;
+    color: #fff;
+    -webkit-box-shadow: none !important;
+    box-shadow: none;
+}
+
+.red_btn,
+.black_btn,
+.btn_lg {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 6px 14px;
+    font-weight: 700;
+    font-size: 14px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.left,
+.fl {
+    float: left;
+}
+
+.right,
+.fr {
+    float: right;
+}
+
+#header {
+    height: 46px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-bottom: none !important;
+    /*    background: #680906; */
+}
+
+#header .pub_logo {
+    float: none !important;
+}
+
+
+/*  --- mobile.css overrides --- */
+
+form {
+    background-color: none !important;
+    background: none !important;
+}
+
+form select {
+    margin: auto;
+}
+
+form label {
+    vertical-align: baseline !important;
+}
+
+input[type=radio]:focus,
+input[type=checkbox]:focus {
+    border: none;
+    outline: none;
+}
+
+input[type=checkbox]:checked {
+    background: none !important;
+    background-color: none;
+}
+
+form input[type=checkbox] {
+    width: auto !important;
+    height: auto !important;
+}
+
+.tooltip.top .tooltip-arrow {
+    display: none;
+    border: none !important;
+    background-color: none !important;
+}
+
+.tooltip-inner {
+    background-color: none !important;
+    background: none !important;
+}
+
+.btn-join,
+.btn-back,
+.btn-next {
+    width: 90%;
+    border-radius: 4px;
+    color: #fff;
+    margin: .25rem auto .25rem auto;
+    padding: 1.7rem .15rem;
+    font-size: 1.9em !important;
+    font-weight: 400;
+    letter-spacing: .09rem;
+    cursor: pointer;
+    /*    background-color: #447DC3;  */
+    border: 0;
+    min-height: 55px;
+}
+
+.btn-next {
+    /*  background-color: #447DC3;  */
+    margin-top: 40px;
+}
+
+.btn-join {
+    /*   background-color: #447DC3;   */
+}
+
+.btn-back {
+    background-color: #ccc;
+}
+
+button.header-nav-back {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='var(--gp-secondary-color)' class='bi bi-chevron-left' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z' /%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*--- flypaper overrides ---*/
+
+#not_in_country_widget {
+    padding-top: 10px;
+}
+
+#flypaper_city,
+#flypaper_zip {
+    display: none !important;
+}
+
+input[type=email] .validated,
+input[type=password] .validated {
+    border: none !important;
+    border: 1px solid #2ecc71;
+    background-color: #fff !important;
+}
+
+input[type=checkbox] .validated {
+    border: none !important;
+}
+
+#terms_disclaimer {
+    width: 95% !important;
+    margin: 5px auto !important;
+    
+
+}
+
+#terms_disclaimer label {
+    color: #666 !important;
+    font-size: 15px !important;
+    line-height: 1;
+    white-space: normal;
+}
+
+#terms_disclaimer input.disabledClass {
+    border: .071428571em solid #b8b8b8 !important;
+}
+
+#privacy-agree {
+    color: #666;
+    font-size: .98em !important;
+}
+
+
+/*---  new quiz tour styles  ---*/
+
+input[type=text],
+select.age,
+select.age.validated,
+select#country_select,
+select#country_select.validated,
+input[type=select],
+input[type=number],
+input[type=email],
+input[type=password] {
+    width: 90% !important;
+    height: 50px;
+    margin: auto !important;
+    font-size: 1.85em !important;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    background: #fff;
+    border: .071428571em solid #b8b8b8;
+}
+
+#not_in_country_widget {
+    margin-bottom: 10px;
+}
+
+#flypaper_city,
+#flypaper_zip {
+    display: none !important;
+}
+
+
+/*  bootstrap slider  */
+
+#ex1Slider .slider-selection,
+#ex1Slider .slider-handle {
+    background: #447DC3;
+}
+
+.slider {
+    width: 90%;
+    margin: 1em auto 1em auto;
+    color: #447DC3;
+}
+
+.slider .left {
+    float: left;
+}
+
+.slider .right {
+    float: right;
+}
+
+
+/*  radio button styles */
+
+.gender-selector input,
+.choice-selector input {
+    margin-top: 2em;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+}
+
+.male {
+    background-image: url('../images/male.png');
+}
+
+.female {
+    background-image: url('../images/female.png');
+}
+
+.couple {
+    background-image: url('../images/couple.png');
+}
+
+.yes {
+    background-image: url('../images/yes.png');
+}
+
+.no {
+    background-image: url('../images/no.png');
+}
+
+.gender-selector input:active+.radio-img,
+.choice-selector input:active+.radio-img,
+.choice-selector input:active+.radio-img2 {
+    opacity: .9;
+}
+
+.gender-selector input:checked+.radio-img,
+.choice-selector input:checked+.radio-img,
+.choice-selector input:checked+.radio-img2 {
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+    opacity: .9;
+}
+
+.chk {
+    opacity: .9;
+}
+
+.type-selector input {
+    margin-top: .5em;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+}
+
+.radio-img, .radio-img2 {
+    margin: .2em;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 70px;
+    height: 90px;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    -webkit-filter: brightness(1) grayscale(1) opacity(1);
+    -moz-filter: brightness(1.8) grayscale(1) opacity(.5);
+    filter: brightness(1) grayscale(1) opacity(1);
+    /*  styles for Android and older browsers  */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+}
+
+.radio-img:hover,
+.radio-img:checked,
+.radio-img2:hover,
+.radio-img2:checked {
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    filter: brightness(1.2) grayscale(.5) opacity(.9);
+    /*  styles for Android and older browsers   */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9 !important;
+}
+
+.radio-img2 .willing-label { margin-left: -20px; }
+
+/*  checkbox button styles  */
+
+h1 {
+    text-align: center;
+    margin: auto auto .25em auto;
+}
+
+#view1 h1,
+#view2 h1,
+#view3 h1,
+#view4 h1,
+#view5 h1,
+#view6 h1,
+#view7 h1,
+h2 {
+    font-size: 24px;
+    width: 90%;
+    margin: .5em auto;
+    font-weight: normal;
+}
+
+.type-selector input:active+.check-img {
+    opacity: .9;
+}
+
+.type-selector input:checked+.check-img {
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+    opacity: .9;
+}
+
+.check-img {
+    cursor: pointer;
+    position: absolute;
+    min-height: 80px;
+    min-width: 80px;
+    left: 0;
+    background-position: center;
+    background-size: contain;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.6);
+    -moz-filter: brightness(1.8) grayscale(1) opacity(.6);
+    filter: brightness(1.8) grayscale(1) opacity(.6);
+    /*  styles for Android and older browsers  */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+    filter: alpha(opacity=60);
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+}
+
+.check-img:hover,
+.check-img:checked {
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    filter: brightness(1.2) grayscale(.5) opacity(.9);
+    /*  styles for Android and older browsers   */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9 !important;
+}
+
+.check-img-holder {
+    position: relative;
+    text-align: center;
+}
+
+.check-img-label {
+    background-color: #fff;
+    padding: 0.2em;
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+    /*    font-size: .7em;  */
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+    opacity: .7;
+    color: #999;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+ul li {
+    width: 80px;
+    height: 80px;
+    margin: .5em;
+    text-align: center;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #fafafa;
+}
+
+ul li:nth-child(3n) {
+    break-after: auto;
+}
+
+.bigtits {
+    background-image: url('../images/bigtits.jpg');
+}
+
+.slim {
+    background-image: url('../images/slim.jpg');
+}
+
+.curvy {
+    background-image: url('../images/curvy.jpg');
+}
+
+.bbw {
+    background-image: url('../images/bbw.jpg');
+}
+
+.athletic {
+    background-image: url('../images/athletic.jpg');
+}
+
+.bigass {
+    background-image: url('../images/bigass.jpg');
+}
+
+.athletic-m {
+    background-image: url('../images/athletic-m.jpg');
+}
+
+.husky {
+    background-image: url('../images/husky.jpg');
+}
+
+.slim-m {
+    background-image: url('../images/slim-m.jpg');
+}
+
+.muscular {
+    background-image: url('../images/muscular.jpg');
+}
+
+.dadbod {
+    background-image: url('../images/dadbod.jpg');
+}
+
+.heavy {
+    background-image: url('../images/heavy.jpg');
+}
+
+label.check-img {
+    display: unset;
+}
+
+.type-label {
+    margin-top: 45%;
+    text-align: center;
+    font-size: .75em;
+    display: inline-block;
+    line-height: 1;
+}
+
+.gender-label {
+    margin-left: -22px;
+    margin-top: 75px;
+    text-align: left;
+    font-size: .75em;
+    color: #777;
+    padding-top: 30px;
+    margin-right: 10px;
+    position: absolute;
+    font-size: small;
+}
+
+.willing-label {
+    margin-left: -50px;
+    margin-top: 66px;
+    text-align: left;
+    font-size: 1.5em;
+    padding-top: 30px;
+    color: #777;
+    position: absolute;
+}
+
+
+/*-- set font to size small for all elements --*/
+
+div#not_in_country_widget,
+.error.error_show,
+.slider,
+p {
+    font-size: 1.5em;
+}
+
+p.legal {
+    font-size: 1.2rem;
+    padding: .25em .5em;
+}
+
+.footer {
+    display: block;
+    z-index: 0;
+    width: 100%;
+    line-height: 2em!important;
+    padding: .5rem 0;
+    font-size: 1.2rem !important;
+    text-align: center;
+    margin-top: 2rem;
+    color: #999;
+}
+
+.signin {
+    margin-top: 2em;
+    font-size: 1.35em;
+    color: #777;
+}
+
+#footer {
+    background: #f1f1f1;
+    color: #666 !important;
+    line-height: auto !important;
+}
+
+#footer a {
+    font-weight: normal !important;
+}
+
+.follow {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+img.footer-icons {
+    margin: auto;
+    display: inline-block;
+    padding: .2rem;
+    width: 24px;
+    height: 24px;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+* html .Clearfix,
+*:first-child+html .clearfix {
+    zoom: 1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form label {
+    font-weight: normal;
+    color: #999;
+    white-space: normal;
+}
+
+
+/* ----------- Desktop ----------- */
+
+@media only screen and (min-width: 776px) {
+    .view {
+        max-width: 776px;
+    }
+}
